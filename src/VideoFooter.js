@@ -4,18 +4,18 @@ import Ticker from "react-ticker";
 
 import "./VideoFooter.css";
 
-function VideoFooter() {
+function VideoFooter({ channel, description, song }) {
   return (
     <div className="videoFooter">
       <div className="videoFooter_text">
-        <h3>@gokhnkaragz</h3>
-        <p>this is a description</p>
+        <h3>@{channel}</h3>
+        <p>{description}</p>
         <div className="videoFooter_ticker">
           <MusicNoteIcon className="videoFooter_icon" />
           <Ticker mode="smooth">
             {({ index }) => (
               <>
-                <p>'NABER LAN MİLLET? {index}'</p>
+                <p>{song}</p>
               </>
             )}
           </Ticker>
