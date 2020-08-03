@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import VideoFooter from "./VideoFooter";
+import VideoSidebar from "./VideoSidebar";
+
 import "./Video.css";
 
 function Video() {
@@ -31,7 +33,7 @@ function Video() {
         description="Seni seviyorum ıslın pırçısııığ. #lovelove"
         song="Usher - Yeah"
       />
-      {/* <VideoSidebar /> */}
+      <VideoSidebar favoritedCount={175} shares={14} messages={5} />
     </div>
   );
 }
