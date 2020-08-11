@@ -30,7 +30,6 @@ function Video({
     <div className="video">
       <video
         className="video_player"
-        muted={true}
         loop
         onClick={onVideoPress}
         ref={videoRef}
